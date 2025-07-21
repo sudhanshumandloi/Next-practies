@@ -25,7 +25,7 @@ const Signupform = ({setIsLoggedIn}) => {
          ) )
     }
 
-    const submitHandler = (event) => {
+    const submitHandler = (event : React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if(formData.password !== formData.confirmpassword){
             toast.error("Password do not match");
