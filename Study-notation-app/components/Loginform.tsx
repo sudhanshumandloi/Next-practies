@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import {AiOutlineEyeInvisible , AiOutlineEye} from "react-icons/ai"
-import { Link, useNavigate } from "react-router-dom";
+import Link from "next/link";
 
 const Loginform = ({setIsLoggedIn}) => {
 
@@ -59,7 +59,7 @@ const Loginform = ({setIsLoggedIn}) => {
                         {showPassword ? (<AiOutlineEyeInvisible />) : (<AiOutlineEye />)}
                     </span>
 
-                    <Link to="#">
+                    <Link href="#">
                         <p>Forget Password</p>
                     </Link>
                 </label>
