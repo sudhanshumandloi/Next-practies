@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import toast from "react-toastify";
 import {AiOutlineEyeInvisible , AiOutlineEye} from "react-icons/ai"
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 const Signupform = ({setIsLoggedIn}) => {
 
-    const navigat = useNavigate();
+    const router = useRouter();
 
     const [formData, setFormdata] = useState({
         firstname:'', lastname:'', email:'', password:'', confirmpassword:''
@@ -37,7 +37,7 @@ const Signupform = ({setIsLoggedIn}) => {
             ...formData
         };
         console.log(accountData);
-        navigat("/dashbord")
+        router.push("/dashbord")
 
     }
 
