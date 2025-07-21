@@ -40,7 +40,7 @@ const Signupform = ({setIsLoggedIn}: Signupformprops) => {
             ...formData
         };
         console.log(accountData);
-        router.push("/dashbord")
+        router.push("/dashboard")
 
     }
 

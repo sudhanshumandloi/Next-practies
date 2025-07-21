@@ -29,7 +29,7 @@ const Loginform = ({setIsLoggedIn}: LoginformProps) => {
         event.preventDefault();
         setIsLoggedIn(true);
         toast.success("Logged in")
-        router.push("/dashbord")
+        router.push("/dashboard")
     }
 
     return (
