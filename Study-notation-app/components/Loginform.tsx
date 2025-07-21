@@ -25,7 +25,7 @@ const Loginform = ({setIsLoggedIn}: LoginformProps) => {
          ) )
     }
 
-    function submitHandler(event : React.ChangeEvent<HTMLInputElement>){
+    function submitHandler(event : React.FormEvent<HTMLFormElement>){
         event.preventDefault();
         setIsLoggedIn(true);
         toast.success("Logged in")
