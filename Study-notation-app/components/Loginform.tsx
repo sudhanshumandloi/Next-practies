@@ -16,7 +16,7 @@ const Loginform = ({setIsLoggedIn}: LoginformProps) => {
 
     const [showPassword, setShowPassword] = useState(false);
 
-    function changeHandler(event){
+    function changeHandler(event : React.ChangeEvent<HTMLInputElement>){
         setFormdata( prevData => (
             {
                 ...prevData,
@@ -25,7 +25,7 @@ const Loginform = ({setIsLoggedIn}: LoginformProps) => {
          ) )
     }
 
-    function submitHandler(event){
+    function submitHandler(event : React.ChangeEvent<HTMLInputElement>){
         event.preventDefault();
         setIsLoggedIn(true);
         toast.success("Logged in")
