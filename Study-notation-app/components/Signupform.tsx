@@ -3,7 +3,10 @@ import {toast} from "react-toastify";
 import {AiOutlineEyeInvisible , AiOutlineEye} from "react-icons/ai"
 import { useRouter } from "next/navigation";
 
-const Signupform = ({setIsLoggedIn}) => {
+type Signupformprops = {
+    setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const Signupform = ({setIsLoggedIn}: Signupformprops) => {
 
     const router = useRouter();
 
