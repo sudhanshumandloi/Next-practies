@@ -1,6 +1,10 @@
+import { AuthProvider } from "@/context/AuthContext";
+import Signup from "@/pages/Signup";
 
-export default function Signup(){
+export default function Signuppage(){
     return(
-        <div>Sign Up</div>
+        <AuthProvider>
+            <Signup />
+        </AuthProvider>
     );
 }
