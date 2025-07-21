@@ -4,7 +4,11 @@ import {AiOutlineEyeInvisible , AiOutlineEye} from "react-icons/ai"
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const Loginform = ({setIsLoggedIn}) => {
+type LoginformProps = {
+    setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Loginform = ({setIsLoggedIn}: LoginformProps) => {
 
     const router = useRouter();
 
