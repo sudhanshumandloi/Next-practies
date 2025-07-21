@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import toast from "react-toast";
+import { toast } from "react-toastify";
 import {AiOutlineEyeInvisible , AiOutlineEye} from "react-icons/ai"
 import { Link, useNavigate } from "react-router-dom";
 
