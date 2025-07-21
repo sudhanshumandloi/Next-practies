@@ -16,7 +16,7 @@ const Signupform = ({setIsLoggedIn}) => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
 
-    const changeHandler = (event) =>{
+    const changeHandler = (event : React.ChangeEvent<HTMLInputElement>) =>{
         setFormdata( prevData => (
             {
                 ...prevData,
