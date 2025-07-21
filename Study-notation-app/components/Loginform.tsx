@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState }from "react";
 import { toast } from "react-toastify";
 import {AiOutlineEyeInvisible , AiOutlineEye} from "react-icons/ai"
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Loginform = ({setIsLoggedIn}) => {
 
-    const navigat = useNavigate();
+    const router = useRouter();
 
     const [formData, setFormdata] = useState({email:'', password:'' });
 
@@ -24,7 +25,7 @@ const Loginform = ({setIsLoggedIn}) => {
         event.preventDefault();
         setIsLoggedIn(true);
         toast.success("Logged in")
-        navigat("/dashbord")
+        router.push("/dashbord")
     }
 
     return (
