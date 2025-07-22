@@ -26,7 +26,7 @@ export default function RootLayout({ children}: Readonly<{
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <AuthProvider>
-          <div>
+          <div className="w-screen h-screen bg-richblack-900 flex flex-col">
             <Nevbar />
           </div>
           {children}
