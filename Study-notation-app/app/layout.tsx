@@ -28,8 +28,8 @@ export default function RootLayout({ children}: Readonly<{
         <AuthProvider>
           <div className="w-screen h-screen bg-richblack-900 flex flex-col">
             <Nevbar />
+            {children}
           </div>
-          {children}
         </AuthProvider>
       </body>
     </html>
