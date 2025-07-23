@@ -9,13 +9,13 @@ export default function Nevbar(){
     const { isLoggedIn, setIsLoggedIn } = useAuth();
 
     return(
-        <div className="flex justify-evenly">
+        <div className="flex justify-between items-center w-11/12 max-w-[1160px] py-4 mx-auto">
             <Link href="/">
                  <Image src={logo} alt='logo' width={160} height={32} loading="lazy" />
             </Link>
 
             <nav>
-                <ul className="flex ml-3 gap-3">
+                <ul className="flex text-richblack-100 gap-x-3">
                     <li>
                         <Link href = "/" >Home</Link>
                     </li>
