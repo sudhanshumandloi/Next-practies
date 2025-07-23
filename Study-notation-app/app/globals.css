@@ -11,6 +11,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-richblack-900: #000814;
+  --color-richblack-800: #161d29;
+  --color-richblack-700: #2c333f;
   --color-richblack-100: #afb2bf;
 }
 
