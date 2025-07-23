@@ -28,17 +28,21 @@ export default function Nevbar(){
                 </ul>
             </nav>
 
-            <div className="flex ml-3 gap-3">
+            <div className="flex items-center gap-x-4">
                 { !isLoggedIn &&
                     <Link href="/login">
-                        <button>
+                        <button className="bg-richblack-800 text-richblack-100 py-[8px] px-[12px] rounded-[8px]
+                            border border-richblack-700"
+                        >
                             Login
                         </button>
                     </Link>
                 }
                 { !isLoggedIn &&
                     <Link href="/signup">
-                        <button>
+                        <button className="bg-richblack-800 text-richblack-100 py-[8px] px-[12px] rounded-[8px]
+                            border border-richblack-700"
+                        >
                             Signup
                         </button>
                     </Link>
@@ -48,14 +52,19 @@ export default function Nevbar(){
                         <button onClick={() => {
                             setIsLoggedIn(false);
                             toast.success("Logged out");
-                        }}>
+                            }}
+                            className="bg-richblack-800 text-richblack-100 py-[8px] px-[12px] rounded-[8px]
+                            border border-richblack-700"
+                        >
                             Log out
                         </button>
                     </Link>
                 }
                 { isLoggedIn &&
                     <Link href ="/dashbord">
-                        <button>
+                        <button className="bg-richblack-800 text-richblack-100 py-[8px] px-[12px] rounded-[8px]
+                            border border-richblack-700"
+                        >
                             dashbord
                         </button>
                     </Link>
